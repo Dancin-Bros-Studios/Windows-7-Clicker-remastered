@@ -1,0 +1,144 @@
+{
+  "repo_notes": [
+    {
+      "content": ""
+    }
+  ],
+  "pages": [
+    {
+      "title": "Project Overview",
+      "purpose": "High-level introduction to Windows 7 Clicker Remastered — what it is, how to run it, and how the repository is organized. Links to child pages for setup and gameplay concepts.",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Getting Started",
+      "purpose": "Step-by-step guide for running the game from source (Python + pgzero) and as a compiled executable. Covers dependencies, directory layout, and the dev-build watermark.",
+      "parent": "Project Overview",
+      "page_notes": [
+        {
+          "content": "The button assets are yet to be replaced as said in the dev watermark"
+        }
+      ]
+    },
+    {
+      "title": "Gameplay Mechanics",
+      "purpose": "Explains the core clicker loop: clicking the Windows logo, earning currency, critical hits, particle effects, and the three upgrade items (Auto Clicker, Super Clicker, Multi Click).",
+      "parent": "Project Overview",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Source Code Architecture",
+      "purpose": "Overview of main.py's internal structure — the pgzero lifecycle hooks, global state variables, and how the game loop ties together input, update, and draw. Links to child pages for each major subsystem.",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Game Loop and State Management",
+      "purpose": "Deep dive into the pgzrun/pgzero event loop, the update() and draw() functions, global variables (count, click_value, bonus flags), and the clock.schedule_interval auto-clicker timers.",
+      "parent": "Source Code Architecture",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Input Handling and Click Pipeline",
+      "purpose": "Details the on_mouse_down() handler, the aplicar_click() critical-hit logic (10% chance, 5× multiplier), collision detection with Actors, and the bounce animation triggered on each click.",
+      "parent": "Source Code Architecture",
+      "page_notes": [
+        {
+          "content": "The button assets are yet to be replaced as said in the dev watermark"
+        }
+      ]
+    },
+    {
+      "title": "Upgrade System",
+      "purpose": "Covers the three purchasable upgrades: Bonus 1 (Auto Clicker, +1/2 s), Bonus 2 (Super Clicker, +15/2 s), and Bonus 3 (Multi Click, +1 click_value). Explains pricing, ownership counters, and the draw_bonus() UI helper.",
+      "parent": "Source Code Architecture",
+      "page_notes": [
+        {
+          "content": "The button assets are yet to be replaced as said in the dev watermark"
+        }
+      ]
+    },
+    {
+      "title": "Assets",
+      "purpose": "Overview of all non-code resources bundled with the game — images, audio, fonts, and the application icon. Links to child pages for visual and audio assets.",
+      "page_notes": [
+        {
+          "content": "The button assets are yet to be replaced as said in the dev watermark"
+        }
+      ]
+    },
+    {
+      "title": "Visual Assets",
+      "purpose": "Documents every image file in images/: background.png (desktop backdrop), windows.png (the clickable Windows logo actor), bonus.png (upgrade shop icons), backoldbackup.png (legacy backup of the original background), and win7.ico (executable icon).",
+      "parent": "Assets",
+      "page_notes": [
+        {
+          "content": "The button assets are yet to be replaced as said in the dev watermark (bonus.png)"
+        }
+      ]
+    },
+    {
+      "title": "Audio Assets",
+      "purpose": "Documents the music and sounds directories: bgwin7 (looping background track), win7intro (startup jingle played once), win7 (per-click sound effect), and win7battery (purchase confirmation sound). Explains how pgzero's music and sounds namespaces load these files.",
+      "parent": "Assets",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Build and Distribution",
+      "purpose": "Overview of how the game is packaged into a standalone Windows executable using PyInstaller. Links to child pages covering the build spec and the PyInstaller runtime internals.",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "PyInstaller Build Spec and TOC",
+      "purpose": "Explains main.spec (Analysis, PYZ, EXE blocks), the asset datas mappings, UPX compression, the win7.ico icon setting, and what the generated Analysis-00.toc and EXE-00.toc files record about bundled binaries and data files.",
+      "parent": "Build and Distribution",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "PyInstaller Runtime Internals",
+      "purpose": "Covers the frozen-application bootstrap machinery bundled in build/main/localpycs/: ZlibArchiveReader (pyimod01_archive), PyiFrozenFinder/Loader (pyimod02_importers), ctypes library redirection (pyimod03_ctypes), pywin32 DLL bootstrapping (pyimod04_pywin32), the struct helper, and base_library.zip.",
+      "parent": "Build and Distribution",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Glossary",
+      "purpose": "Definitions of every codebase-specific term, framework concept, and abbreviation an onboarding engineer needs to know, with code pointers to the relevant files and symbols.",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    }
+  ]
+}
