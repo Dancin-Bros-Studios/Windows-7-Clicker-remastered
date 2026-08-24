@@ -35,8 +35,7 @@ No se garantiza estabilidad ni funcionalidad completa.
 ---
 
 ## 👨‍💻 Créditos
-Desarrollado por **Dancin Bros Studios**  
-Contribuidor principal: [AlexOrtega301](https://github.com/AlexOrtega301)
+Desarollador principal: [AlexOrtega301](https://github.com/AlexOrtega301)
 
 ---
 
