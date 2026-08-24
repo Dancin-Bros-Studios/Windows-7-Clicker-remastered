@@ -37,10 +37,13 @@ No se garantiza estabilidad ni funcionalidad completa.
 ## 👨‍💻 Créditos
 Desarrollado por **Dancin Bros Studios**  
 Contribuidor principal: [AlexOrtega301](https://github.com/AlexOrtega301)
+
 ---
+
 ## Donde encontrar el original
 Original fue hecho por mí en Kodland
 Enlace Original: [Windows 7 Clicker Ultra COOL](https://hub.kodland.org/es/project/247889)  
+
 ---
 ## 📜 Licencia
 Este proyecto es de uso interno.  
